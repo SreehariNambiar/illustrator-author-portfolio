@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import Sliding from './components/Sliding';
+import Scroll from './components/Scroll';
+import MovingDot from './components/MovingDot';
+import Galaxy from './components/Galaxy';
+import Eclipse from './components/Eclipse';
+import Moon from './components/Moon';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+     <Sliding/>
+     {/* <Eclipse/> */}
+     {/* <Moon/> */}
+   {/* <Galaxy/> */}
+     
+     {/* <Scroll/> */}
     </div>
   );
 }

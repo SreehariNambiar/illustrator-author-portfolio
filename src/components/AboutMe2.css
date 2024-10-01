@@ -1,0 +1,143 @@
+CSS Pretty Print
+ 
+* {
+	 box-sizing: border-box;
+	 width:100vw;
+	 height:100vh;
+}
+
+
+.hhh{
+	 display: flex;
+	 /* align-items: center; */
+	 
+	 font-family: monospace;
+	 justify-content: center;
+	 /* background-color: #1d212b; */
+	 max-width:70vw;
+	 
+	
+}
+.hhh span{
+	background-color: #3700ff;
+	font-weight: bold;
+}
+
+.hhh span a{
+	color:#e1ff00;
+	text-decoration: 2px solid #e1ff00 line-through;
+}
+.hhh span a:hover{
+	text-decoration: 2px solid #fff underline;
+	
+}
+
+.hhhhh{
+	padding:10px;
+	/* font-size:1.5em; */
+	width:auto;
+	border:1px solid #fff;
+	width:20vw;
+
+}
+ .hhhh {
+	padding:10px;
+	 position: relative;
+	 font-size:1.5vw;
+	 /* line-height: 30vw; */
+	 text-align: left;
+	 color: #252b37;
+	 text-decoration: 0.05vw solid rgb(0, 29, 29) line-through;
+	 background-color: rgb(0, 29, 29);
+	 animation: textColor 10s ease infinite;
+}
+.hhhh:after {
+	 position: absolute;
+	 content: "";
+	 top: 5vw;
+	 left: 0;
+	 right: 0;
+	 z-index: -1;
+	 height: 100%;
+	 width: 100%;
+	 margin: 0 auto;
+	 transform: scale(0.75);
+	 -webkit-filter: blur(5vw);
+	 -moz-filter: blur(5vw);
+	 -ms-filter: blur(5vw);
+	 filter: blur(5vw);
+	 background: linear-gradient(270deg, #0fffc1, #7e0fff);
+	 background-size: 200% 200%;
+	 animation: animateGlow 10s ease infinite;
+}
+ @keyframes animateGlow {
+	 0% {
+		 background-position: 0% 50%;
+	}
+	 50% {
+		 background-position: 100% 50%;
+	}
+	 100% {
+		 background-position: 0% 50%;
+	}
+}
+ @keyframes textColor {
+	 0% {
+		 color: #7e0fff;
+	}
+	 50% {
+		 color: #0fffc1;
+	}
+	 100% {
+		 color: #7e0fff;
+	}
+}
+ 
+ 
+@media screen and (max-width: 600px) {
+	.hhh{
+		max-width:100vw;
+		/* height:auto; */
+		margin-top:0;
+		/* flex-direction: column; */
+		margin-top:0px;
+display: block;
+		overflow-y:auto;
+		overflow-x:hidden;
+		max-height:70vh;
+		height:100%;
+
+		
+		
+	}
+	.hhhh {
+		
+		 /* font-size:1em; */
+		 /* display: none; */
+		 /* height:100%; */
+		 /* line-height: 30vw; */
+		 
+	}
+	.hhhhh{
+		width:auto;
+		height:auto;
+	}
+	.hhh:after{
+		/* top:10vw; */
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.hhhh {
+		
+		font-size:3.5vw;
+		/* line-height: 30vw; */
+		
+   }
+   .hhh:after{
+	/* top:1005vw; */
+
+}
+
+}

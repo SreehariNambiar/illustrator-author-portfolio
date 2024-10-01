@@ -1,0 +1,23 @@
+.lol{
+  
+    margin-left:20px;
+    width:100vw;
+    height:75vh;
+    display:flex;
+    /* justify-content:space-evenly; */
+    overflow-x: auto;
+    overflow-y:hidden;
+    
+    
+}
+
+
+.imag{
+    scale:1;  
+    transition: 0.5s;
+}
+
+.imag:hover{
+    scale:1.25;
+    
+}

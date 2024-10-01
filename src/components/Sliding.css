@@ -1,0 +1,99 @@
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #333; */
+    color: #fff;
+    /* height: 100vh; */
+    line-height: 1.6;
+    overflow: hidden;
+    
+  }
+  
+  .container {
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    /* height: 60px; */
+    /* background: rgba(0,0,0,0.7); */
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar  a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #f4f4f4;
+  }
+  
+  .navbar ul li a:hover {
+    color: skyblue;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: start;
+  }
+  
+  section h1 {
+    /* font-size: 4rem; */
+  }
+  
+  /* Section Images */
+  section#home {
+    /* background: #000; */
+    color:#fff;
+  }
+  
+  section#about {
+    /* background: #00bbff; */
+    background: #001821;
+    /* color:#fff; */
+  }
+  
+  section#service {
+    /* background: #44107a ; */
+    background: #100021 ;
+    color:#fff;
+  }
+  
+  section#contact {
+    /* background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;; */
+    background: #ff1361;
+    background: #2b000e;
+    color:#fff;
+  }
+  

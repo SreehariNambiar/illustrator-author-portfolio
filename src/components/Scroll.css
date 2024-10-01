@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+:root {
+    --startPosX: 110%;
+    --startPosY: -800%;
+  }
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+svg{
+  position: absolute;
+}
+.wrapper{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: sticky;
+  bottom: 0px;
+  height:auto;
+  /* background-color: #275EFE; */
+  display: flex;
+  /* margin-top:100px; */
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+#container{
+ 
+  margin: 50px auto;
+  position: relative;
+  filter: url(#goo);
+
+
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Anton;
+    font-size: 40px;
+    z-index: 999;
+    /* letter-spacing: 0.05em;; */
+    color: white;
+    transition:1s;
+  }
+
+
+  .drop{
+    height: 10px;
+    width: 10px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(var(--startPosX),var(--startPosY)) scaleX(0.5);
+    animation: move 6s cubic-bezier(1,.04,.74,.2) infinite;
+  }
+}
+
+.drop:hover{
+    transform:rotateY(-10deg);
+
+}
+
+@keyframes move{
+  0%{
+    transform: translate(var(--startPosX),var(--startPosY)) scaleX(0.2);
+    height: 50px;
+  }
+  30%{
+    transform: translate(var(--startPosX),-100%);
+    height: 10px;
+  }
+  70%{
+    transform: translate(var(--startPosX),70%);
+    height: 10px;
+  }
+  100%{
+    transform: translate(var(--startPosX),800%) scaleX(0.2);
+    height: 50px;
+  }
+}
+
+
+
+
